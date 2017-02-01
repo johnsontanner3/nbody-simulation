@@ -47,8 +47,8 @@ public class Planet {
 	}
 	
 	public double calcForceExertedByY(Planet planny2) {
-		double dx = planny2.myXPos - myXPos;
-		double dy = planny2.myYPos - myYPos;
+		double dx = planny2.myXPos - this.myXPos;
+		double dy = planny2.myYPos - this.myYPos;
 		double rad = Math.sqrt((dx*dx) + (dy*dy));
 		double forceVec = calcForceExertedBy(planny2);
 		double f1y = forceVec * dy / rad;
