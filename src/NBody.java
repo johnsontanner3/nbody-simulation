@@ -7,9 +7,9 @@ import java.util.Scanner;
 public class NBody {
 	
 	public static void main(String[] args){
-		double T = 157788000.0;
+		double T = 50000.0;
 		double dt = 25000.0;
-		String pfile = "data/twin-binaries.txt";
+		String pfile = "data/planets.txt";
 		if (args.length > 2) {
 			T = Double.parseDouble(args[0]);
 			dt = Double.parseDouble(args[1]);
@@ -20,12 +20,15 @@ public class NBody {
 	
 		System.out.printf("%d\n", planets.length);
 		System.out.printf("%.2e\n", radius);
-		for (int i = 0; i < planets.length; i++) {
-		    System.out.printf("%11.4e %11.4e %11.4e %11.4e %11.4e %12s\n",
-		   		              planets[i].myXPos, planets[i].myYPos, 
-		                      planets[i].myXVel, planets[i].myYVel, 
-		                      planets[i].myMass, planets[i].myFileName);	
-		}
+		
+//		for (int i = 0; i < planets.length; i++) {
+//		    System.out.printf("%11.4e %11.4e %11.4e %11.4e %11.4e %12s\n",
+//		   		              planets[i].myXPos, planets[i].myYPos, 
+//		                      planets[i].myXVel, planets[i].myYVel, 
+//		                      planets[i].myMass, planets[i].myFileName);	
+//		}
+		
+		
 		// figure out how to draw stuff
 //		StdDraw.setScale(-radius, radius);
 //		StdDraw.picture(0.0, 0.0, "images/starfield.jpg", radius*2, radius*2); // have to rescale to fit window
@@ -57,6 +60,12 @@ public class NBody {
 			
 			StdDraw.show(10);
 			time += dt;
+		}
+		for (int i = 0; i < planets.length; i++) {  //  to print final Planet values 
+		    System.out.printf("%11.4e %11.4e %11.4e %11.4e %11.4e %12s\n",
+		   		              planets[i].myXPos, planets[i].myYPos, 
+		                      planets[i].myXVel, planets[i].myYVel, 
+		                      planets[i].myMass, planets[i].myFileName);	
 		}
 	}
 	
