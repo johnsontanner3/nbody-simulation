@@ -55,10 +55,10 @@ public class Planet {
 		return f1y;
 	}
 	
-	public double calcDistance(Planet p2) {
+	public double calcDistance(Planet p2) { // expected 0.0, got 6.0
 		// calculates distance between two Planet objects 
-		double dx = p2.myXPos - myYPos;
-		double dy = p2.myYPos - myYPos;
+		double dx = p2.myXPos - this.myYPos;
+		double dy = p2.myYPos - this.myYPos;
 		double rad = Math.sqrt((dx*dx) + (dy*dy));
 		return rad;
 	}
