@@ -1,1 +1,38 @@
-Fill in reflect here. 
+Tanner Johnson 
+netID: tlj21
+
+Hours Spent: Started writing code on Friday 1/27 and finished 
+that same day in 4 hours. Edited code for a few minutes today so
+it complies with Gradescope. 
+
+Consulted with: NONE
+
+Resources used: Stack Overflow 
+
+Impressions: This was a super helpful introductory assignment. 
+I have no recommendations for improvement. Providing a visual 
+end product was very satisfying for me. 
+
+Questions:
+1. For T = 1,000,000 and dT = 25,000: 
+ X Position  Y Position  Planet
+ 1.4642e+11  3.0333e+10  earth.gif
+ 2.2653e+11  2.4654e+10  mars.gif
+ 3.7730e+10  4.3365e+10  mercury.gif
+ 2.8151e+04  3.2066e+03  sun.gif
+ 1.0215e+11  3.5220e+10  venus.gif
+ 
+   For T = 2,000,000 and dT = 25,000:
+ X Position  Y Position  Planet
+ 1.3745e+11  5.8722e+10  earth.gif
+ 2.2262e+11  4.8429e+10  mars.gif
+-7.1867e+09  5.6955e+10  mercury.gif
+ 1.0466e+05  2.3844e+04  sun.gif
+ 8.5462e+10  6.5891e+10  venus.gif
+ 
+ 2. The planets start to be unhinged from their desired trajectories when dt > 1,000,000
+    because the velocity of planets begin to reach a value that escapes the overall gravitational
+    forces. Planetary velocity increases with and increased dT, so the probability that a smaller 
+    planet leaves orbit increases as dT increases towards 1,000,000 seconds. 
+ 
+   

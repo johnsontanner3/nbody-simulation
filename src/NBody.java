@@ -7,8 +7,8 @@ import java.util.Scanner;
 public class NBody {
 	
 	public static void main(String[] args){
-		double T = 50000.0;
-		double dt = 25000.0;
+		double T = 5000000000.0;
+		double dt = 4000000.0;
 		String pfile = "data/planets.txt";
 		if (args.length > 2) {
 			T = Double.parseDouble(args[0]);
